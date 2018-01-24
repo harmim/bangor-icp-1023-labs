@@ -9,37 +9,32 @@ public class GradeCalculatorWithMethods
 
 		System.out.println("ICP 1023 Grade Calculator");
 		System.out.println("*************************");
-		double testsPercentage = getTests(input);
-		double labsPercentage = getLabs(input);
-		double assignmentPercentage = getAssignment(input);
-		int finalMark = calculateMark(testsPercentage, labsPercentage, assignmentPercentage);
-		displayMark(finalMark);
+		displayMark(calculateMark(getTests(input), getLabs(input), getAssignment(input)));
 	}
 
 
 	private static double getTests(Scanner input)
 	{
-		System.out.println("Enter test marks");
-		int testsSum = 0;
-		for (int i = 1; i < 5; i++) {
+		int numberOfTests = 4, testMaxPoints = 20, testsSum = 0;
+		for (int i = 1; i <= numberOfTests; i++) {
 			System.out.printf("Test %d: ", i);
 			testsSum += input.nextInt();
 		}
 
-		return (double) testsSum / (20 * 4) * 100;
+		return (double) testsSum / (testMaxPoints * numberOfTests) * 100;
 	}
 
 
 	private static double getLabs(Scanner input)
 	{
 		System.out.println("Enter laboratory marks");
-		int labsSum = 0;
-		for (int i = 1; i < 5; i++) {
+		int numberOfLabs = 4, labMaxPoints = 10, labsSum = 0;
+		for (int i = 1; i <= numberOfLabs; i++) {
 			System.out.printf("Lab %d: ", i);
 			labsSum += input.nextInt();
 		}
 
-		return (double) labsSum / (10 * 4) * 100;
+		return (double) labsSum / (labMaxPoints * numberOfLabs) * 100;
 	}
 
 

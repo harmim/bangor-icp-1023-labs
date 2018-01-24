@@ -11,20 +11,20 @@ public class GradeCalculator
 		System.out.println("*************************");
 
 		System.out.println("Enter test marks");
-		int testsSum = 0;
-		for (int i = 1; i < 5; i++) {
+		int numberOfTests = 4, testMaxPoints = 20, testsSum = 0;
+		for (int i = 1; i <= numberOfTests; i++) {
 			System.out.printf("Test %d: ", i);
 			testsSum += input.nextInt();
 		}
-		double testsPercentage = (double) testsSum / (20 * 4) * 100;
+		double testsPercentage = (double) testsSum / (testMaxPoints * numberOfTests) * 100;
 
 		System.out.println("Enter laboratory marks");
-		int labsSum = 0;
-		for (int i = 1; i < 5; i++) {
+		int numberOfLabs = 4, labMaxPoints = 10, labsSum = 0;
+		for (int i = 1; i <= numberOfLabs; i++) {
 			System.out.printf("Lab %d: ", i);
 			labsSum += input.nextInt();
 		}
-		double labsPercentage = (double) labsSum / (10 * 4) * 100;
+		double labsPercentage = (double) labsSum / (labMaxPoints * numberOfLabs) * 100;
 
 		System.out.println("Programming Assignment");
 		System.out.print("Assignment: ");

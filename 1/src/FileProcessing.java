@@ -5,12 +5,15 @@ import java.io.IOException;
 
 public class FileProcessing
 {
-	public static void main(String[] args) throws IOException
+	public static void main(String[] args)
 	{
 		System.out.println("ICP 1023 Grade Calculator");
 		System.out.println("*************************");
 
 		try (BufferedReader br = new BufferedReader(new FileReader("marks.dat"))) {
+			int marksSum = 0;
+			int marksCount = 0;
+
 			while (true) {
 				String line = br.readLine();
 				if (line == null) {
@@ -18,35 +21,40 @@ public class FileProcessing
 				}
 
 				String[] values = line.split(", ");
-				double testsPercentage = getTests(values);
-				double labsPercentage = getLabs(values);
-				double assignmentPercentage = getAssignment(values);
-				int finalMark = calculateMark(testsPercentage, labsPercentage, assignmentPercentage);
-				displayMark(finalMark);
+				if (values.length == 9) {
+					int mark = calculateMark(getTests(values), getLabs(values), getAssignment(values));
+					marksSum += mark;
+					marksCount++;
+					displayMark(mark);
+				}
 			}
+
+			System.out.printf("\nMean mark is %g%%\n", calculateMean(marksSum, marksCount));
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
 		}
 	}
 
 
 	private static double getTests(String[] values)
 	{
-		int testsSum = 0;
-		for (int i = 0; i < 4; i++) {
+		int numberOfTests = 4, testMaxPoints = 20, testsSum = 0;
+		for (int i = 0; i < numberOfTests; i++) {
 			testsSum += Integer.parseInt(values[i]);
 		}
 
-		return (double) testsSum / (20 * 4) * 100;
+		return (double) testsSum / (testMaxPoints * numberOfTests) * 100;
 	}
 
 
 	private static double getLabs(String[] values)
 	{
-		int labsSum = 0;
-		for (int i = 4; i < 8; i++) {
+		int numberOfLabs = 4, labMaxPoints = 10, labsSum = 0;
+		for (int i = 4; i < numberOfLabs + 4; i++) {
 			labsSum += Integer.parseInt(values[i]);
 		}
 
-		return (double) labsSum / (10 * 4) * 100;
+		return (double) labsSum / (labMaxPoints * numberOfLabs) * 100;
 	}
 
 
@@ -65,5 +73,11 @@ public class FileProcessing
 	private static void displayMark(int finalMark)
 	{
 		System.out.printf("\nFinal mark is %d%%\n", finalMark);
+	}
+
+
+	private static double calculateMean(int sum, int count)
+	{
+		return (double) sum / count;
 	}
 }
