@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 
+/**
+ * @author Dominik Harmim <harmim6@gmail.com>
+ */
 public class GradeCalculator
 {
 	public static void main(String[] args)

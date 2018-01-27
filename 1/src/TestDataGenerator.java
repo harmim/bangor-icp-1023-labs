@@ -3,6 +3,9 @@ import java.io.PrintWriter;
 import java.util.Random;
 
 
+/**
+ * @author Dominik Harmim <harmim6@gmail.com>
+ */
 public class TestDataGenerator
 {
 	public static void main(String[] args)

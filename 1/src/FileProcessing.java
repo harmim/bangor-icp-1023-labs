@@ -3,6 +3,9 @@ import java.io.FileReader;
 import java.io.IOException;
 
 
+/**
+ * @author Dominik Harmim <harmim6@gmail.com>
+ */
 public class FileProcessing
 {
 	public static void main(String[] args)
