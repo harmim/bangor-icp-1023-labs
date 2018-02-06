@@ -1,7 +1,7 @@
 /**
  * A class to test the BankAccount class.
  *
- * @author Dominik Harmim <harmim6@gmail.com>
+ * @author Dominik Harmim harmim6@gmail.com
  */
 public class BankAccountTester
 {

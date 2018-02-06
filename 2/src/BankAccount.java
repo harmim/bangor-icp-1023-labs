@@ -1,7 +1,7 @@
 /**
  * A bank account has a balance that can be changed by deposits and withdrawals.
  *
- * @author Dominik Harmim <harmim6@gmail.com>
+ * @author Dominik Harmim harmim6@gmail.com
  */
 public class BankAccount
 {

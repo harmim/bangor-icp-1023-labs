@@ -1,5 +1,5 @@
 /**
- * @author Dominik Harmim <harmim6@gmail.com>
+ * @author Dominik Harmim harmim6@gmail.com
  */
 public class CounterTester
 {
