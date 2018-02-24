@@ -19,7 +19,7 @@ public class SavingsAccountTester
 		System.out.println(account1);
 
 		account1.withdraw(500.0);
-		System.out.println("Widthdraw 500");
+		System.out.println("Withdraw 500");
 		System.out.println(account1);
 
 		account1.deposit(1000.0);
@@ -31,7 +31,7 @@ public class SavingsAccountTester
 		System.out.println(account1);
 
 		account1.withdraw(200.0);
-		System.out.println("Widthdraw 200");
+		System.out.println("Withdraw 200");
 		System.out.println(account1);
 
 		account1.deposit(200.0);

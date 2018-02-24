@@ -23,7 +23,7 @@ public class CheckingAccountTester
 		System.out.println(account1);
 
 		account1.withdraw(500.0);
-		System.out.println("Widthdraw 500");
+		System.out.println("Withdraw 500");
 		System.out.println(account1);
 
 		account1.deposit(1000.0);
@@ -35,11 +35,11 @@ public class CheckingAccountTester
 		System.out.println(account1);
 
 		account1.withdraw(500.0);
-		System.out.println("Widthdraw 500");
+		System.out.println("Withdraw 500");
 		System.out.println(account1);
 
 		account1.withdraw(500.0);
-		System.out.println("Widthdraw 500");
+		System.out.println("Withdraw 500");
 		System.out.println(account1);
 
 		account1.endOfMonth();

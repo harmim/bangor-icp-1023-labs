@@ -16,7 +16,7 @@ public class PersonTester
 
 		System.out.println("Person 1:");
 		System.out.println("Forename: " + person1.getForename());
-		System.out.println("Surename: " + person1.getSurname());
+		System.out.println("Surname: " + person1.getSurname());
 		System.out.println("Age: " + person1.getAge());
 		System.out.println("Height: " + person1.getHeight());
 		System.out.println("Gender: " + person1.getGender());
@@ -28,7 +28,7 @@ public class PersonTester
 		person1.setHeight(1.83);
 		person1.setGender("male");
 		System.out.println("Forename: " + person1.getForename());
-		System.out.println("Surename: " + person1.getSurname());
+		System.out.println("Surname: " + person1.getSurname());
 		System.out.println("Age: " + person1.getAge());
 		System.out.println("Height: " + person1.getHeight());
 		System.out.println("Gender: " + person1.getGender());
