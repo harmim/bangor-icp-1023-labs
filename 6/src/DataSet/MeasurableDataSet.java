@@ -9,7 +9,7 @@ package DataSet;
  *
  * @author Dominik Harmim harmim6@gmail.com
  */
-public class DataSet
+public class MeasurableDataSet
 {
 	private int count;
 	private double sum;
@@ -20,7 +20,7 @@ public class DataSet
 	/**
 	 * Initialises instance variables.
 	 */
-	public DataSet()
+	public MeasurableDataSet()
 	{
 		count = 0;
 		sum = 0;
@@ -51,9 +51,9 @@ public class DataSet
 
 
 	/**
-	 * Returns maximum of DataSet.
+	 * Returns maximum of MeasurableDataSet.
 	 *
-	 * @return maximum of DataSet
+	 * @return maximum of MeasurableDataSet
 	 */
 	public Measurable getMaximum()
 	{
@@ -62,9 +62,9 @@ public class DataSet
 
 
 	/**
-	 * Returns minimum of DataSet.
+	 * Returns minimum of MeasurableDataSet.
 	 *
-	 * @return minimum of DataSet
+	 * @return minimum of MeasurableDataSet
 	 */
 	public Measurable getMinimum()
 	{
@@ -73,9 +73,9 @@ public class DataSet
 
 
 	/**
-	 * Returns average of DataSet.
+	 * Returns average of MeasurableDataSet.
 	 *
-	 * @return average of DataSet
+	 * @return average of MeasurableDataSet
 	 */
 	public double getAverage()
 	{
