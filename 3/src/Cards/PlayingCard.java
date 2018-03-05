@@ -109,9 +109,9 @@ public class PlayingCard
 
 
 	/**
-	 * Returns string represetation of PlayingCard instance.
+	 * Returns string representation of PlayingCard instance.
 	 *
-	 * @return string represetation of PlayingCard instance
+	 * @return string representation of PlayingCard instance
 	 */
 	@Override
 	public String toString()
