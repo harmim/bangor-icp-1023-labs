@@ -15,8 +15,8 @@ public class MeasurerDataSet
 	private double sum;
 	private Object max;
 	private Object min;
-	Measurer measurer;
-	Filter filter;
+	private Measurer measurer;
+	private Filter filter;
 
 
 	/**
