@@ -141,7 +141,7 @@ public class Student
 	 */
 	public String format()
 	{
-		return String.format("%-10s %-15s %-15s %-20s", forename, surname, studentId, degreeScheme);
+		return String.format("%-12s  %-12s  %-10s  %-20s", forename, surname, studentId, degreeScheme);
 	}
 
 

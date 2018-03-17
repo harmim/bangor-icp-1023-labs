@@ -49,8 +49,8 @@ public class RegistryCli
 
 
 	/**
-	 * Runs registry CLI interface. Displays menu and processing user actions until an error will occur or user want to
-	 * quit.
+	 * Runs registry CLI interface.
+	 * Displays menu and processing user actions until an error will occur or user want to quit.
 	 */
 	public void run()
 	{

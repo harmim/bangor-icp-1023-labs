@@ -66,8 +66,8 @@ public class Registry
 	public String format()
 	{
 		StringBuilder stringBuilder = new StringBuilder(
-			String.format("%-10s %-15s %-15s %-20s\n", "Forename", "Surname", "Student ID", "Degree scheme")
-			+ String.format("%010d %015d %015d %020d\n", 0, 0, 0, 0).replace('0', '-')
+			String.format("%-12s  %-12s  %-10s  %-20s\n", "Forename", "Surname", "Student ID", "Degree scheme")
+			+ String.format("%012d  %012d  %010d  %020d\n", 0, 0, 0, 0).replace('0', '-')
 		);
 		String prefix = "";
 		for (Student student : studentList) {
