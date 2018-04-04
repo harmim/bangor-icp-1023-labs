@@ -1,12 +1,5 @@
-# IntelliJ
-.idea/
-*.iml
-
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
 .*
 !.gitignore
+
+# output
+/out/
